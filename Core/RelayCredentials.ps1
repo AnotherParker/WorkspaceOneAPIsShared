@@ -1,0 +1,1 @@
+$SFTPCredential = ConvertTo-SecureString (Get-AZVaultSecret -VaultName "NameOfVault" -Name "Secret Name" -asplaintext) -AsPlainText

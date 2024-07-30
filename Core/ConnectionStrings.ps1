@@ -1,0 +1,9 @@
+$apiHostCert = 'URL'
+$apiHostProd = 'Url'
+$RestURL = 'https://emea.uemauth.vmwservices.com/connect/token'
+$ClientIDCert = ConvertTo-SecureString (Get-AZVaultSecret -VaultName "NameOfVault" -Name "Secret Name" -asplaintext) -AsPlainText
+$clientSecretCert = ConvertTo-SecureString (Get-AZVaultSecret -VaultName "NameOfVault" -Name "Secret Name" -asplaintext) -AsPlainText
+$clientIDProd = ConvertTo-SecureString (Get-AZVaultSecret -VaultName "NameOfVault" -Name "Secret Name" -asplaintext) -AsPlainText
+$clientSecretProd = ConvertTo-SecureString (Get-AZVaultSecret -VaultName "NameOfVault" -Name "Secret Name" -asplaintext) -AsPlainText
+$ApiKeyCert = ConvertTo-SecureString (Get-AZVaultSecret -VaultName "NameOfVault" -Name "Secret Name" -asplaintext) -AsPlainText
+$ApiKeyProd = ConvertTo-SecureString (Get-AZVaultSecret -VaultName "NameOfVault" -Name "Secret Name" -asplaintext) -AsPlainText
